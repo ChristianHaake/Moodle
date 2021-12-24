@@ -4,8 +4,9 @@ I'm starting a collection of my Moodle-Style snippets.
 
 ## Overview ##
 
-[Collections][https://github.com/ChristianHaake/Moodle/blob/main/Style_Snippets/Styles.md] 
-[Moodle Style Sheets][Styles.md]
+[Collections](https://github.com/ChristianHaake/Moodle/blob/main/Style_Snippets/Styles.md)
+
+[Moodle Style Sheets](Styles.md)
 
 
 ## How to contribute ##
