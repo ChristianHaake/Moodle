@@ -1,7 +1,7 @@
-### Moodle collection ###
+## Moodle collection ##
 
-## Moodle pages and communities ###
+### Moodle pages and communities ###
 
-## Great sources ##
+### Great sources ###
 
-## Picture & Icon ##
+### Picture & Icon ###
