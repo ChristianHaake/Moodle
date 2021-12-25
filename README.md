@@ -6,7 +6,6 @@ I'm starting a collection of my Moodle-Style snippets.
 
 [Collections](Collections.md)
 
-
 [Moodle Style Sheets](Styles.md)
 
 
