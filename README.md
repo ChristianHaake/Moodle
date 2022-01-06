@@ -8,6 +8,12 @@ I'm starting a collection of my Moodle-Style snippets.
 
 [Moodle Style Sheets](Styles.md)
 
+# Icons and emojis #
+
+- https://openmoji.org - Open source emojis for designers, developers and everyone else!
+- https://commons.wikimedia.org/ - Wikipedia picture database
+
+
 
 ## How to contribute ##
 
