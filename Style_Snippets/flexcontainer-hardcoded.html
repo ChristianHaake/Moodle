@@ -1,24 +1,63 @@
-<!--Not working yet-->
 
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
 
-<!--CCBYSA inspired By Einar @ehu_ehu
--->
+    :root {
+        font-size: 0.75em;
+        line-height: 1.4;
+        --main-font: "TabletGothic","Helvetica Neue",Helvetica,Arial,FreeSans,sans-serif;
+        --secondary-font: 'Open Sans', sans-serif;
+        --main-colour:  #e50046;
+    }
+    @media (min-width: 800px) {
+        :root {
+        font-size: 0.875em;
+        }
+    }
+    @media (min-width: 1200px) {
+        :root {
+        font-size: 1em;
+        }
+    }
 
-<p></p>
-
-<div class="flex-container">
-    <div style="
+    .flex-container {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: stretch;
-        align-content: center;"></div>
+        align-content: center;
+    }
+
+    .flex-items {   
+        display: block;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        align-self: auto;
+        order: 0;
+        margin: 10px;
+        width:200px;
+    }
     
+    .card_2 {
+        justify-content: space-evenly;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        height: 115px;
+        padding: 0;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
     .card_2 * {
         transition: 0.3s ease all;
     }
-    
+
     .card_2 img {
         margin: 0;
         width: 64px;
@@ -26,81 +65,100 @@
         object-fit: cover;
         display: block;
     }
-    
+
     .card_2:hover img, .card_2:focus-within img {
         margin-top: -155px;
     }
-    
+
     .card_2:hover h3, .card_2:focus-within h3 {
         padding: 8px 12px 0;
     }
 
-    <!-- Gallery item -->
-    <div class="flex-items">
-        <div style="display: block; flex-grow: 0; flex-shrink: 1; flex-basis: auto; align-self: auto; order: 0; margin: 10px; width:200px;">
-        <div class="card_2 alert-success shadow-sm">
-            <div style="justify-content: space-evenly; -webkit-background-clip: border-box; background-clip: border-box; border: 1px solid rgba(0,0,0,.125); height: 115px; padding: 0; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1); border-radius: 15px; overflow: hidden;">
-            <div class="card-body text-center"><img src="https://moodle.nibis.de/mbnds/pluginfile.php/7068/mod_folder/content/0/plush-toy.png" style="margin-bottom:80px" alt="" width="64" height="64" role="presentation" class="img-responsive atto_image_button_text-bottom mx-auto d-block">
-                <h5><a href="#section-3" class="alert-link">Gestaltung</a></h5>
-                <p class="text-muted mb-0">moodle mit Style</p>
+    body {
+        font-family: var(--main-font);
+        color: #000000;
+        background-color: #fffffe;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    </style>
+</head>
+<body>
+
+    <!--Flexcontainer-->
+
+    <div class="flex-container">
+
+        <!-- Gallery item -->
+        <div class="flex-items">
+            <div class="card_2 alert-success shadow-sm">
+                <div class="card-body text-center"><img src="https://moodle.nibis.de/mbnds/pluginfile.php/5385/mod_folder/content/0/plush-toy.png" style="margin-bottom:80px" alt="" width="64" height="64" role="presentation" class="img-responsive atto_image_button_text-bottom mx-auto d-block">
+                    <h5><a href="#section-3" class="alert-link">Gestaltung</a></h5>
+                    <p class="text-muted mb-0">moodle mit Style</p>
+                </div>
+            </div>
+        </div>
+        <!-- End -->
+
+
+        <!-- Gallery item -->
+        <div class="flex-items">
+            <div class="card_2 alert-dark shadow-sm">
+                <div class="card-body text-center"><img src="https://moodle.nibis.de/mbnds/pluginfile.php/5385/mod_folder/content/0/megaphone.png" style="margin-bottom:80px" alt="" width="64" height="64" role="presentation" class="img-responsive atto_image_button_text-bottom mx-auto d-block">
+                    <h5><a href="#section-4" class="alert-link">Organisation</a></h5>
+                    <p class="text-muted mb-0">Anwesenheit</p>
+                </div>
+            </div>
+        </div>
+        <!-- End -->
+
+        <!-- Gallery item -->
+        <div class="flex-items">
+            <div class="card_2 alert-danger shadow-sm">
+                <div class="card-body text-center"><img src="https://moodle.nibis.de/mbnds/pluginfile.php/5385/mod_folder/content/0/team.png" style="margin-bottom: 80px" alt="" width="64" height="64" role="presentation" class="img-responsive atto_image_button_text-bottom mx-auto d-block">
+                    <h5><a href="#section-5" class="alert-link">Gruppen</a></h5>
+                    <p class="text-muted mb-0">Arbeiten in Gruppen</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- End -->
+
+        <!-- Gallery item -->
+        <div class="flex-items">
+            <div class="card_2 alert-primary shadow-sm">
+                <div class="card-body text-center"><img src="https://moodle.nibis.de/mbnds/pluginfile.php/5385/mod_folder/content/0/hammer.png" style="margin-bottom:80px" alt="" width="64" height="64" role="presentation" class="img-responsive atto_image_button_text-bottom mx-auto d-block">
+                    <h5><a href="#section-7" class="alert-link">Material</a></h5>
+                    <p class="text-muted mb-0">Hilfen und Links</p>
+                </div>
             </div>
         </div>
     </div>
-    <!-- End -->
 
-
-    <!-- Gallery item -->
-    <div class="flex-items">
-        <div style="display: block; flex-grow: 0; flex-shrink: 1; flex-basis: auto; align-self: auto; order: 0; margin: 10px; width:200px;">
-        <div class="card_2 alert-dark shadow-sm">
-            <div style="justify-content: space-evenly; -webkit-background-clip: border-box; background-clip: border-box; border: 1px solid rgba(0,0,0,.125); height: 115px; padding: 0; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1); border-radius: 15px; overflow: hidden;">
-            <div class="card-body text-center"><img src="https://moodle.nibis.de/mbnds/pluginfile.php/7068/mod_folder/content/0/megaphone.png" style="margin-bottom:80px" alt="" width="64" height="64" role="presentation" class="img-responsive atto_image_button_text-bottom mx-auto d-block">
-                <h5><a href="#section-4" class="alert-link">Organisation</a></h5>
-                <p class="text-muted mb-0">Anwesenheit</p>
-            </div>
-        </div>
-    </div>
-    <!-- End -->
-
-    <!-- Gallery item -->
-    <div class="flex-items">
-        <div style="display: block; flex-grow: 0; flex-shrink: 1; flex-basis: auto; align-self: auto; order: 0; margin: 10px; width:200px;">
-        <div class="card_2 alert-danger shadow-sm">
-            <div style="justify-content: space-evenly; -webkit-background-clip: border-box; background-clip: border-box; border: 1px solid rgba(0,0,0,.125); height: 115px; padding: 0; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1); border-radius: 15px; overflow: hidden;">
-            <div class="card-body text-center"><img src="https://moodle.nibis.de/mbnds/pluginfile.php/7068/mod_folder/content/0/team.png" style="margin-bottom: 80px" alt="" width="64" height="64" role="presentation" class="img-responsive atto_image_button_text-bottom mx-auto d-block">
-                <h5><a href="#section-5" class="alert-link">Gruppen</a></h5>
-                <p class="text-muted mb-0">Arbeiten in Gruppen</p>
-            </div>
-
-        </div>
-    </div>
-    <!-- End -->
-
-    <!-- Gallery item -->
-    <div class="flex-items">
-        <div style="display: block; flex-grow: 0; flex-shrink: 1; flex-basis: auto; align-self: auto; order: 0; margin: 10px; width:200px;">
-        <div class="card_2 alert-primary shadow-sm">
-            <div style="justify-content: space-evenly; -webkit-background-clip: border-box; background-clip: border-box; border: 1px solid rgba(0,0,0,.125); height: 115px; padding: 0; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1); border-radius: 15px; overflow: hidden;">
-            <div class="card-body text-center"><img src="https://moodle.nibis.de/mbnds/pluginfile.php/7068/mod_folder/content/0/hammer.png" style="margin-bottom:80px" alt="" width="64" height="64" role="presentation" class="img-responsive atto_image_button_text-bottom mx-auto d-block">
-                <h5><a href="#section-7" class="alert-link">Material</a></h5>
-                <p class="text-muted mb-0">Hilfen und Links</p>
-            </div>
-        </div>
-    </div>
-</div>
+</body>
+</html>
 
 
 
 
-../pluginfile.php/7188/mod_folder/content/0/Infobox.png?forcedownload=1
 
-../pluginfile.php/2293/mod_folder/content/0/Button_digitale%20produkte.svg?forcedownload=1
 
-<p style="text-align: left;"><span style="background-color: #ffffff; font-size: 1rem;"><a href="https://moodle.nibis.de/mooc_dev/course/view.php?id=4&amp;section=1" target="_blank" style="background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 1rem;"><img src="https://moodle.nibis.de/mooc_dev/draftfile.php/529/user/draft/210046642/Button_lernfo%CC%88rderliche%20Arbeitsbla%CC%88tter.svg?time=1641818490124" width="600" height="158" style="float: left;" /></a></span><br></p>
 
-<p style="text-align: right;"><a href="https://moodle.nibis.de/mooc_dev/course/view.php?id=4&amp;section=2" target="_blank"><img src="https://moodle.nibis.de/mooc_dev/draftfile.php/529/user/draft/210046642/Button_digitale%20produkte.svg?time=1641825287796" width="600" height="158" style="font-size: 0.9375rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; float: right;" /></a><br></p>
 
-<p style="text-align: right;"><a href="https://moodle.nibis.de/mooc_dev/course/view.php?id=4&amp;section=3" target="_blank"><img src="https://moodle.nibis.de/mooc_dev/draftfile.php/529/user/draft/210046642/Button_kollaboratives%20Arbeiten.svg?time=1641825379684" width="600" height="158" style="text-align: left; float: left;" /></a></p>
+
+
+
+
+
+
+
+
+
+
 
 
 
