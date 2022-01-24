@@ -1,0 +1,55 @@
+<!--Hardcoded Agenda Block with CSS Style. Just add as HTML to your Moodle course-->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    :root {
+    font-size: 0.75em;
+    line-height: 1.4;
+    --main-font: "TabletGothic","Helvetica Neue",Helvetica,Arial,FreeSans,sans-serif;
+    --secondary-font: 'Open Sans', sans-serif;
+    --main-colour:  #e50046;
+    }
+    @media (min-width: 800px) {
+        :root {
+        font-size: 0.875em;
+        }
+    }
+    @media (min-width: 1200px) {
+        :root {
+        font-size: 1em;
+        }
+    }
+
+    .spacer_1 {
+    border:solid var(--main-colour) 1px; 
+    background-color: var(--main-colour); 
+    height:1px; 
+    width:200px;
+    }
+
+    .spacer_2 {
+        border:solid var(--main-colour) 0.5px; 
+        height:1px; 
+        width:400px;
+    }
+    
+
+    body {
+        font-family: var(--main-font);
+        color: #000000;
+        background-color: #fffffe;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    </style>
+</head>
+<body>
+    <hr class="spacer_1">
+    <!--OR-->
+    <hr class="spacer_2">
+</body>
+</html>
